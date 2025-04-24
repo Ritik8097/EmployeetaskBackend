@@ -23,23 +23,23 @@ const seedData = async () => {
     // Create departments
     const departments = await Department.create([
       {
-        name: 'Engineering',
+        name: 'Software Development',
         description: 'Software development and engineering'
       },
       {
-        name: 'Marketing',
-        description: 'Marketing and communications'
+        name: 'Digital Marketing',
+        description: 'Digital marketing and online communications'
       },
       {
-        name: 'Sales',
-        description: 'Sales and customer relationships'
+        name: 'Business Development',
+        description: 'Sales and business relationships'
       },
       {
-        name: 'Finance',
+        name: 'Financial Operations',
         description: 'Financial operations and accounting'
       },
       {
-        name: 'HR',
+        name: 'Human Resources',
         description: 'Human resources and personnel management'
       }
     ]);
@@ -56,24 +56,24 @@ const seedData = async () => {
     });
 
     const engineer1 = await User.create({
-      name: 'Cp7',
-      email: 'cp@example.com',
-      password: 'chandan123',
-      department: 'Engineering'
+      name: 'John Developer',
+      email: 'john@example.com',
+      password: 'password123',
+      department: 'Software Development'
     });
 
     const marketer1 = await User.create({
-      name: 'Sarah ',
+      name: 'Sarah Marketer',
       email: 'sarah@example.com',
       password: 'password123',
-      department: 'Marketing'
+      department: 'Digital Marketing'
     });
 
     const sales1 = await User.create({
-      name: 'Mike ',
+      name: 'Mike Sales',
       email: 'mike@example.com',
       password: 'password123',
-      department: 'Sales'
+      department: 'Business Development'
     });
 
     console.log('Users created...');
